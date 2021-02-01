@@ -1,25 +1,34 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">nuxt-posts</h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+  <div>
+    <Nav />
+    <div style="text-align: center; width: 70%; margin: 0 auto">
+      <c-heading>Newest Posts</c-heading>
+      <c-divider />
+      <br />
+      <div style="text-align: left; width: 80%; margin: 0 auto">
+        <c-stack :spacing="5">
+          <c-box :p="5" shadow="md" border-width="1px">
+            <c-heading>See the Vue</c-heading>
+            <c-text font-size="xl" :mt="4"
+              >Vue makes front-end development a breeze.</c-text
+            >
+            <c-text :mt="4">Vue makes front-end development a breeze.</c-text>
+          </c-box>
+          <c-box :p="5" shadow="md" border-width="1px">
+            <c-heading>Go Nuxt!</c-heading>
+            <c-text font-size="xl" :mt="4">
+              Nuxt makes writing Vue even easier.
+            </c-text>
+            <c-text :mt="4">Nuxt makes writing Vue even easier.</c-text>
+          </c-box>
+          <c-box :p="5" shadow="md" border-width="1px">
+            <c-heading>Go Nuxt!</c-heading>
+            <c-text font-size="xl" :mt="4">
+              Nuxt makes writing Vue even easier.
+            </c-text>
+            <c-text :mt="4">Nuxt makes writing Vue even easier.</c-text>
+          </c-box>
+        </c-stack>
       </div>
     </div>
   </div>
@@ -29,35 +38,4 @@
 export default {}
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>
+<style></style>

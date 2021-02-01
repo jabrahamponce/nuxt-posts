@@ -35,7 +35,19 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@chakra-ui/nuxt',
+    '@nuxtjs/emotion',
   ],
+
+  chakra: {
+    extendTheme: {
+      colors: {
+        brand: {
+          /* ... */
+        },
+      },
+    },
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
