@@ -1,5 +1,6 @@
 <template>
   <div class="nav">
+    <Logo />
     <Drawer class="nav-drawer" />
   </div>
 </template>
@@ -13,6 +14,7 @@ export default {
 <style scoped>
 .nav {
   display: inline;
+  text-align: center;
 }
 .nav-drawer {
   text-align: right;
