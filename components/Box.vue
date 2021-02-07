@@ -1,25 +1,18 @@
 <template>
-  <div :spacing="5">
-    <c-box :p="5" shadow="md" border-width="1px">
-      <c-heading>See the Vue</c-heading>
-      <c-text font-size="xl" :mt="4"
-        >Vue makes front-end development a breeze.</c-text
-      >
-      <c-text :mt="4">Vue makes front-end development a breeze.</c-text>
-    </c-box>
-    <c-box :p="5" shadow="md" border-width="1px">
-      <c-heading>Go Nuxt!</c-heading>
-      <c-text font-size="xl" :mt="4">
-        Nuxt makes writing Vue even easier.
-      </c-text>
-      <c-text :mt="4">Nuxt makes writing Vue even easier.</c-text>
-    </c-box>
-    <c-box :p="5" shadow="md" border-width="1px">
-      <c-heading>Go Nuxt!</c-heading>
-      <c-text font-size="xl" :mt="4">
-        Nuxt makes writing Vue even easier.
-      </c-text>
-      <c-text :mt="4">Nuxt makes writing Vue even easier.</c-text>
+  <div :spacing="5" style="margin-bottom: 50px">
+    <c-box
+      v-for="post in posts"
+      :id="post.id"
+      :key="post.id"
+      shadow="md"
+      border-width="1px"
+      style="margin-top: 10px"
+    >
+      <BoxContent
+        :title="post.title"
+        :subtitle="post.subtitle"
+        :done-by-on="post.doneByOn"
+      />
     </c-box>
   </div>
 </template>
@@ -28,6 +21,33 @@
 export default {
   name: '',
   components: {},
+  data() {
+    return {
+      posts: [
+        {
+          id: '1',
+          title: 'See the Vue',
+          subtitle: 'Vue makes front-end development a breeze.',
+          doneByOn: 'by Jose Ponce, Jan. 27th, 2020',
+          goTo: '/blogpost',
+        },
+        {
+          id: '2',
+          title: 'Go Nuxt 1!',
+          subtitle: 'Vue makes front-end development a breeze x2',
+          doneByOn: 'by Jose Ponce, Jul. 27th, 2020',
+          goTo: '/blogpost',
+        },
+        {
+          id: '3',
+          title: 'Go Nuxt 2',
+          subtitle: 'Vue makes front-end development a breeze x3',
+          doneByOn: 'by Jose Ponce, Dec. 27th, 2020',
+          goTo: '/blogpost',
+        },
+      ],
+    }
+  },
 }
 </script>
 
