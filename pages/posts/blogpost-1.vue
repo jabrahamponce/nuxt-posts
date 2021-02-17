@@ -1,5 +1,10 @@
 <template>
-  <div>Tadaaaa</div>
+  <div>
+    <div style="margin: 20px 20px">
+      <Nav />
+    </div>
+    Tadaaaa 1
+  </div>
 </template>
 
 <script>

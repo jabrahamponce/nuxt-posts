@@ -10,15 +10,14 @@
       <c-drawer-overlay />
       <c-drawer-content>
         <c-drawer-close-button />
-        <c-drawer-header>MENU</c-drawer-header>
+        <c-drawer-header text-align="center">Menu</c-drawer-header>
 
         <c-drawer-body>
-          <ul>
-            <li>Home</li>
-            <li>Posts</li>
-            <li>About</li>
-            <li>Contact</li>
-          </ul>
+          <nuxt-link to="/">Home</nuxt-link>
+          <nuxt-link to="/">Link 1</nuxt-link>
+          <nuxt-link to="/">Link 2</nuxt-link>
+          <nuxt-link to="/">Link 3</nuxt-link>
+          <nuxt-link to="/">Link 4</nuxt-link>
         </c-drawer-body>
 
         <!-- <c-drawer-footer>

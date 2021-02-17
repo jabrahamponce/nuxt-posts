@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1 class="logo">Hello World!</h1>
+  <div class="logo-bg">
+    <h1 class="logo">nuxt-posts</h1>
   </div>
 </template>
 
@@ -15,10 +15,13 @@
     drop-shadow(0px 0px 50px hsl(183deg 100% 50% / 1));
 
   /* Fallback for IE */
-  color: deeppink;
+  /* color: rgb(88, 40, 66); */
   /* Misc aesthetic properties */
   font-size: 52px;
   font-weight: 800;
   font-family: 'Helvetica', sans-serif;
+}
+.logo-bg {
+  background-color: black;
 }
 </style>

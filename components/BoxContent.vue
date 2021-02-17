@@ -1,5 +1,5 @@
 <template>
-  <div @click="viewPost">
+  <div @click="viewPost()">
     <c-heading>{{ title }}</c-heading>
     <c-text font-size="xl" :mt="4">{{ subtitle }}</c-text>
     <c-text :mt="4">{{ doneByOn }}</c-text>
@@ -22,14 +22,14 @@ export default {
       type: String,
       required: true,
     },
-    // goTo: {
-    //   type: String,
-    //   required: true,
-    // },
+    goToPost: {
+      type: String,
+      required: true,
+    },
   },
   methods: {
     viewPost() {
-      this.$router.push('/blogpost')
+      this.$router.push(this.goToPost)
     },
   },
 }

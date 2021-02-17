@@ -1,10 +1,11 @@
 <template>
   <div>
-    <Nav />
-    <div style="text-align: center; width: 70%; margin: 0 auto">
-      <c-heading>Newest Posts</c-heading>
+    <div style="margin: 20px 20px">
+      <Nav />
+    </div>
+    <div style="width: 70%; margin: 0 auto">
+      <c-text style="text-align: left">Newest Posts</c-text>
       <c-divider />
-      <br />
       <div style="text-align: left; width: 80%; margin: 0 auto">
         <c-stack>
           <Box />

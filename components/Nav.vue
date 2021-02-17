@@ -1,8 +1,8 @@
 <template>
-  <div class="nav">
-    <Logo />
-    <Drawer class="nav-drawer" />
-  </div>
+  <span class="nav">
+    <c-heading class="nav-item">MyPosts App</c-heading>
+    <Drawer class="nav-item nav-drawer" />
+  </span>
 </template>
 
 <script>
@@ -12,12 +12,12 @@ export default {
 </script>
 
 <style scoped>
-.nav {
-  display: inline;
-  text-align: center;
-}
+/* .nav {} */
 .nav-drawer {
-  text-align: right;
-  margin: 10px;
+  float: right;
+}
+.nav-item {
+  /* margin: 20px; */
+  display: inline;
 }
 </style>
