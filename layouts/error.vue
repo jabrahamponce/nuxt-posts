@@ -2,9 +2,10 @@
   <div class="error-page">
     <div class="error-page-div">
       <h1 style="font-size: 5em; font-weight: bold">404</h1>
-      <h1>Not found. This page can't be displayed.</h1>
+      <h1>Oops! This page can't be displayed.</h1>
       <h1>
-        Return to <nuxt-link to="/" style="color: #1acf23">Home</nuxt-link>.
+        Please return to
+        <nuxt-link to="/" style="color: #1acf23">Home</nuxt-link>.
       </h1>
     </div>
   </div>
